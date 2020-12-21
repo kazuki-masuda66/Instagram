@@ -11,7 +11,7 @@
         <scene sceneID="Dos-6y-ye7">
             <objects>
                 <viewController storyboardIdentifier="Home" id="xra-DR-IBW" customClass="HomeViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Zd9-tu-6UW" customClass="HomeViewController">
+                    <view key="view" contentMode="scaleToFill" id="Zd9-tu-6UW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -28,11 +28,11 @@
                             <constraint firstItem="K2V-EY-rvx" firstAttribute="bottom" secondItem="RXW-kD-upS" secondAttribute="bottom" id="ofR-pK-tdz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="K2V-EY-rvx"/>
-                        <connections>
-                            <outlet property="tableView" destination="RXW-kD-upS" id="aIw-Za-7mq"/>
-                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="ホーム" image="home" id="uYN-pc-rUE"/>
+                    <connections>
+                        <outlet property="tableView" destination="RXW-kD-upS" id="9ES-tC-xqT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SRE-0P-YlL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -304,7 +304,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="xra-DR-IBW" kind="relationship" relationship="viewControllers" id="QXO-4H-1bj"/>
+                        <segue destination="xra-DR-IBW" kind="relationship" relationship="viewControllers" id="ZL9-5b-YAa"/>
                         <segue destination="O4M-Jg-VfD" kind="relationship" relationship="viewControllers" id="a8e-hM-f6D"/>
                         <segue destination="DKa-AO-XJU" kind="relationship" relationship="viewControllers" id="Yb4-7v-yxE"/>
                     </connections>
