@@ -77,6 +77,9 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
         // セル内のボタンのアクションをソースコードで設定する
         cell.likeButton.addTarget(self, action:#selector(handleButton(_:forEvent:)), for: .touchUpInside)
+        
+        // セル内のボタンのアクションをソースコードで設定する
+        cell.commentButton.addTarget(self, action:#selector(commentButton(_:forEvent:)), for: .touchUpInside)
 
         return cell
     }
@@ -109,5 +112,18 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             postRef.updateData(["likes": updateValue])
         }
     }
+    // セル内のボタンがタップされた時に呼ばれるメソッド
+    @objc func commentButton(_ sender: UIButton, forEvent event: UIEvent) {
+            print("DEBUG_PRINT: コメントボタンがタップされました。")
+                // ①storyboardのインスタンス取得
+               let storyboard: UIStoryboard = self.storyboard!
+        
+               // ②遷移先ViewControllerのインスタンス取得
+               let nextView = storyboard.instantiateViewController(withIdentifier: "comment") as! PostCommentController
+        
+               // ③画面遷移
+               self.present(nextView, animated: true, completion: nil)
+        
+        }
 }
 
