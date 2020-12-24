@@ -49,7 +49,7 @@ class PostTableViewCell: UITableViewCell {
 
         // コメントの表示
         if postData.comment == nil {
-                self.commentLabel.text = "\(postData.name!) :"
+                self.commentLabel.text = ""
         }else{
             self.commentLabel.text = "\(postData.name!) : \(postData.comment!)"
         }

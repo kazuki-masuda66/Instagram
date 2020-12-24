@@ -12,7 +12,7 @@ import SVProgressHUD
 
 class PostCommentController: UIViewController  {
     
-    //var name : String!
+    var id : String!
     
     @IBOutlet weak var displayName: UILabel!
     
@@ -20,19 +20,20 @@ class PostCommentController: UIViewController  {
     
     // 投稿ボタンをタップしたときに呼ばれるメソッド
     @IBAction func handleCommentButton(_ sender: Any) {
+                
         // メッセージデータの保存場所を定義する
-        let postRef = Firestore.firestore().collection(Const.PostPath).document()
+        let postRef = Firestore.firestore().collection(Const.PostPath).document(id)
 
         // HUDで投稿処理中の表示を開始
         SVProgressHUD.show()
         
         // FireStoreに投稿データを保存する
                 let postDic = [
-            "comment": self.commentField!
+                    "comment": self.commentField.text!
             ] as [String : Any]
-        postRef.setData(postDic)
+        postRef.updateData(postDic)
         // HUDで投稿完了を表示する
-         SVProgressHUD.showSuccess(withStatus: "投稿しました")
+         SVProgressHUD.showSuccess(withStatus: "コメントしました")
          // 投稿処理が完了したので先頭画面に戻る
         UIApplication.shared.windows.first{ $0.isKeyWindow }?.rootViewController?.dismiss(animated: true, completion: nil)
     }
