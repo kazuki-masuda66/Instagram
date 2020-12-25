@@ -45,13 +45,13 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjK-kU-B5O">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjK-kU-B5O">
                         <rect key="frame" x="10" y="480" width="419" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="li7-jF-TuS">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="li7-jF-TuS">
                         <rect key="frame" x="10" y="510.5" width="419" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -73,21 +73,21 @@
                     <constraint firstItem="kjK-kU-B5O" firstAttribute="top" secondItem="bxa-vR-KFU" secondAttribute="bottom" constant="10" id="FdN-k2-UvH"/>
                     <constraint firstItem="bxa-vR-KFU" firstAttribute="top" secondItem="j4k-ma-9lM" secondAttribute="bottom" constant="10" id="KCK-eE-slF"/>
                     <constraint firstAttribute="trailing" secondItem="kjK-kU-B5O" secondAttribute="trailing" constant="10" id="LEv-CN-Xyb"/>
-                    <constraint firstAttribute="trailing" secondItem="li7-jF-TuS" secondAttribute="trailing" constant="10" id="OnB-i6-y3e"/>
+                    <constraint firstAttribute="trailing" secondItem="li7-jF-TuS" secondAttribute="trailing" constant="10" id="RJ6-Ig-cFQ"/>
                     <constraint firstItem="z9e-Vo-xhQ" firstAttribute="leading" secondItem="Izj-fc-J5G" secondAttribute="trailing" constant="10" id="W6F-Me-Zdv"/>
-                    <constraint firstItem="li7-jF-TuS" firstAttribute="top" secondItem="kjK-kU-B5O" secondAttribute="bottom" constant="10" id="Yzu-Tl-2fH"/>
                     <constraint firstItem="pxm-dN-HR5" firstAttribute="top" secondItem="j4k-ma-9lM" secondAttribute="bottom" constant="10" id="ZFY-JR-ugJ"/>
+                    <constraint firstItem="li7-jF-TuS" firstAttribute="top" secondItem="kjK-kU-B5O" secondAttribute="bottom" constant="10" id="ZJh-hi-ME4"/>
                     <constraint firstAttribute="trailingMargin" secondItem="j4k-ma-9lM" secondAttribute="trailing" id="ZZk-AJ-YGj"/>
                     <constraint firstItem="Izj-fc-J5G" firstAttribute="centerY" secondItem="bxa-vR-KFU" secondAttribute="centerY" id="aX1-1K-1B4"/>
                     <constraint firstItem="bxa-vR-KFU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="eqR-Be-enA"/>
-                    <constraint firstAttribute="bottom" secondItem="li7-jF-TuS" secondAttribute="bottom" constant="10" id="fAa-or-xgF"/>
                     <constraint firstItem="j4k-ma-9lM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="iIU-D1-EKW"/>
-                    <constraint firstItem="li7-jF-TuS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="joz-0v-0fn"/>
                     <constraint firstItem="kjK-kU-B5O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="mgD-yR-2c5"/>
                     <constraint firstItem="pxm-dN-HR5" firstAttribute="centerY" secondItem="bxa-vR-KFU" secondAttribute="centerY" id="n6s-4T-YGm"/>
                     <constraint firstItem="Izj-fc-J5G" firstAttribute="leading" secondItem="bxa-vR-KFU" secondAttribute="trailing" constant="10" id="rJA-6J-Dbw"/>
                     <constraint firstItem="pxm-dN-HR5" firstAttribute="leading" secondItem="Izj-fc-J5G" secondAttribute="trailing" constant="10" id="uL9-es-ZH4"/>
+                    <constraint firstItem="li7-jF-TuS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ubF-6U-3we"/>
                     <constraint firstItem="Izj-fc-J5G" firstAttribute="centerY" secondItem="bxa-vR-KFU" secondAttribute="centerY" id="wju-7f-57f"/>
+                    <constraint firstAttribute="bottom" secondItem="li7-jF-TuS" secondAttribute="bottom" constant="37" id="zM0-LL-gOL"/>
                     <constraint firstItem="z9e-Vo-xhQ" firstAttribute="centerY" secondItem="bxa-vR-KFU" secondAttribute="centerY" id="znK-RK-tyA"/>
                 </constraints>
             </tableViewCellContentView>
