@@ -47,11 +47,18 @@ class PostTableViewCell: UITableViewCell {
         // キャプションの表示
         self.captionLabel.text = "\(postData.name!) : \(postData.caption!)"
 
+        //コメントの取り出し
+        var comments = ""
+        for comment in postData.comments {
+            comments += "\(comment)\n"
+        }
+        
         // コメントの表示
-        if postData.comment == nil {
+        if postData.comments == nil {
                 self.commentLabel.text = ""
         }else{
-            self.commentLabel.text = "\(postData.name!) : \(postData.comment!)"
+            self.commentLabel.text = comments
+            //self.commentLabel.text = "\(postData.name!) : \(postData.comment!)"
         }
         
         
