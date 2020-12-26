@@ -28,11 +28,21 @@ class PostCommentController: UIViewController  {
         SVProgressHUD.show()
         
         // FireStoreに投稿データを保存する
+        var updateValue: FieldValue
+        //updateValue = self.commentField.text! + self.displayName.text!
+        
+        var comment = "\(displayName.text!) : \(commentField.text!)"
+        
+        updateValue = FieldValue.arrayUnion([comment])
+        postRef.updateData(["comment": updateValue])
+
+       /*
                 let postDic = [
                     "comment": self.commentField.text!,
                     "commentName": self.displayName.text!
             ] as [String : Any]
         postRef.updateData(postDic)
+ */
         // HUDで投稿完了を表示する
          SVProgressHUD.showSuccess(withStatus: "コメントしました")
          // 投稿処理が完了したので先頭画面に戻る

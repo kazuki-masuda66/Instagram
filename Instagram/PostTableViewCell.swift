@@ -63,7 +63,7 @@ class PostTableViewCell: UITableViewCell {
                 self.commentLabel.text = ""
         }else{
             //self.commentLabel.text = "\(commentString)"
-            self.commentLabel.text = "\(postData.name!) : \(commentString)"
+            self.commentLabel.text = "\(commentString)"
         }
         
         
