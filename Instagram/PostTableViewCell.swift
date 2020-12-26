@@ -48,17 +48,22 @@ class PostTableViewCell: UITableViewCell {
         self.captionLabel.text = "\(postData.name!) : \(postData.caption!)"
 
         //コメントの取り出し
-        var comments = ""
-        for comment in postData.comments {
-            comments += "\(comment)\n"
+        var commentString = ""
+        for comment in postData.comment {
+            commentString += "\(comment)\n"
         }
         
+        print("DEBUG_PRINT: ")
+        print(commentString)
+        print("DEBUG_PRINT: ")
+        print(postData.comment)
+        
         // コメントの表示
-        if postData.comments == nil {
+        if postData.comment == nil {
                 self.commentLabel.text = ""
         }else{
-            self.commentLabel.text = comments
-            //self.commentLabel.text = "\(postData.name!) : \(postData.comment!)"
+            //self.commentLabel.text = "\(commentString)"
+            self.commentLabel.text = "\(postData.name!) : \(commentString)"
         }
         
         

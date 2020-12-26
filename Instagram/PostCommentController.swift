@@ -29,7 +29,8 @@ class PostCommentController: UIViewController  {
         
         // FireStoreに投稿データを保存する
                 let postDic = [
-                    "comment": self.commentField.text!
+                    "comment": self.commentField.text!,
+                    "commentName": self.displayName.text!
             ] as [String : Any]
         postRef.updateData(postDic)
         // HUDで投稿完了を表示する
